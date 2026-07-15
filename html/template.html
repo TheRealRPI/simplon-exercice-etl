@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='fr_FR'>
+    <head>
+        <meta charset="utf-8" />   <!--It is necessary to use the UTF-8 encoding with plotly graphics to get e.g. negative signs to render correctly -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rapport - Commandes S1 2024</title>
+    </head>
+
+    <body>
+
+        <h1>Rapport - Commandes S1 2024</h1>
+
+        <div>
+            <h2>Statistiques clés</h2>
+            <p>CA : {{ ca|safe }} €</p>
+            <p>Nombre de Commandes : {{ nb_commandes|safe }}</p>
+            <p>Taux d'annulations : {{ taux_annulation|safe }} %</p>
+        </div>
+
+        <div>
+            <h2>Graphique 1</h2>
+            <div>{{ fig1 }}</div>
+
+            <h2>Graphique 2</h2>
+            <div>{{ fig2 }}</div>
+            
+            <h2>Graphique 3</h2>
+            <div>{{ fig3 }}</div>
+        </div>
+
+        <p>Ce rapport a été généré automatiquement</p>
+    </body>
+</html>
